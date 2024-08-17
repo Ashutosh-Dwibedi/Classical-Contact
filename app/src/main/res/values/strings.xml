@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Classical Contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="keypad">Keypad</string>
+    <string name="history">History</string>
+    <string name="contacts">Contacts</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="astrik">*</string>
+    <string name="_0">0</string>
+    <string name="hash">#</string>
+    <string name="_5">5</string>
+    <string name="demo_input_text">1234567890!@+*fgyghjguyghghg</string>
+    <string name="_91_1234567890">+91–1234567890</string>
+    <string name="_24_05_2023">24/05/2023</string>
+    <string name="_00_25_21">00:25:21</string>
+    <string name="outgoing">outgoing</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="invalid_name_or_number">Invalid Name or Number!</string>
+    <string name="_123456789">123456789</string>
+    <string name="delete_contact">Delete Contact?  </string>
+    <string name="delete">Delete</string>
+    <string name="image_icon">This is a image icon</string>
+    <string name="call_icon">call icon</string>
+</resources>

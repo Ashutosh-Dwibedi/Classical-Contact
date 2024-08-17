@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveNewContact">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_contact_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage_background">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/new_name_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/name"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                app:counterMaxLength="25"
+                app:endIconMode="clear_text"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_contact_name_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/new_number_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/number"
+                app:startIconDrawable="@drawable/baseline_call_24"
+                app:counterMaxLength="25"
+                app:endIconMode="clear_text"
+                app:prefixText="+91"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.8">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_contact_number_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="phone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/new_contact_ShapeableImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/blank_contact_photo"
+        android:elevation="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_contact_cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="@color/black" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/new_contact_save_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_contact_cardView"
+        app:layout_constraintVertical_bias="0.13">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/new_contact_save_button"
+            android:background="@drawable/vintage_background"
+            android:textAllCaps="false"
+            android:text="@string/save"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/new_contact_cancel_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_contact_save_cardView"
+        app:layout_constraintVertical_bias="0.13">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/new_contact_cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/vintage_background"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
