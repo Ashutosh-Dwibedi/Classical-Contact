@@ -7,7 +7,7 @@ This is contact application project developed using Andoid Studio, Java.
   <li>Make voice call</li>
   <li>Send Messages</li>
   <li>View Saved Contacts</li>
-  <li>Save,edit,delete contacts</li>
+  <li>Save, edit, delete contacts</li>
   <li>View recent contact log</li>
   <li>Attractive vintage style UI</li>
 </ul>
